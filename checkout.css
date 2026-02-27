@@ -11,14 +11,16 @@ body {
   color: #222;
 }
 
-/* ===== NAVBAR ===== */
+header {
+  background: linear-gradient(135deg, #0d6efd, #4facfe);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
 .navbar {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   padding: 14px 40px;
-  background: #ffffff;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
 .logo-wrapper {
@@ -28,17 +30,19 @@ body {
 }
 
 .logo {
-  width: 50px;
-  height: 50px;
+  width: 55px;
+  height: 55px;
   border-radius: 50%;
   object-fit: cover;
+  border: 2px solid #fff;
 }
 
 .logo-text {
+  color: #fff;
   font-weight: 700;
-  line-height: 1.1;
   letter-spacing: 1px;
-  color: #222;
+  line-height: 1.2;
+  font-size: 14px;
 }
 
 .nav-links {
@@ -50,19 +54,30 @@ body {
 
 .nav-links li a {
   text-decoration: none;
-  color: #333;
+  color: #fff;
   font-weight: 500;
+  padding: 6px 10px;
+  border-radius: 6px;
   transition: 0.3s;
 }
 
 .nav-links li a:hover {
-  color: #0d6efd;
+  background: rgba(255,255,255,0.2);
 }
 
-#userNameText {
-  font-weight: 600;
-  color: #198754;
-  margin-left: 10px;
+#cart-icon {
+  position: relative;
+}
+
+#cart-count {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: red;
+  color: #fff;
+  font-size: 8px;
+  padding: 2px 6px;
+  border-radius: 50%;
 }
 
 /* ===== CART ICON ===== */
@@ -72,11 +87,11 @@ body {
 
 #cart-count {
   position: absolute;
-  top: -8px;
-  right: -10px;
+  top: 10px;
+  right: 48px;
   background: crimson;
   color: white;
-  font-size: 12px;
+  font-size: 8px;
   width: 20px;
   height: 20px;
   border-radius: 50%;

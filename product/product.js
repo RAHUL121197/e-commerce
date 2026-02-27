@@ -166,12 +166,7 @@ cartIcon.addEventListener("click", function () {
     saveCartToLocalStorage();
 })
 
-// let currentProduct = allProducts;
+function checkout(){
+    window.location.href="/checkout.html";
+}
 
-// addToCartBtn.addEventListener("click", () => {
-//             if(currentProduct){
-//                 addToCart(currentProduct);
-//                 updateCartCount();
-//                 renderCartItem();
-//             }
-// })

@@ -190,6 +190,9 @@ function updateCartCount() {
 
 
 
+
+
+
 function removeItem(productId) {
     cart = cart.filter(item => item.id !== productId);
 
